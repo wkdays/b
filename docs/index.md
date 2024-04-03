@@ -1,17 +1,19 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+# Welcome to my website :smile:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Hey, I'm Timothée Mazzucotelli, **@pawamoy** on GitHub and other platforms.
+I develop open-source software, primarily Python tools and libraries.
+I do this full time: I earn my keep through sponsorship from individual users and companies,
+which is what makes these projects sustainable and gives you a chance to use them.
+Check out my [Insiders program](insiders.md) to learn more.
 
-## Project layout
+Below is the list of all my blog posts.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<style>
+@media only screen and (min-width: 1220px) {
+    .md-nav__list {
+        display: none;
+    }
+}
+</style>

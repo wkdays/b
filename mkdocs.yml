@@ -1,15 +1,81 @@
-site_name: yongli'blog
-theme:
-  name: material
-  language: en # language of the site
-  features:
-    - navigation.tabs # To have tabs instead of links
-    - navigation.tabs.sticky # So have the tabs always present at the top of the page, event when you scroll down
-    - navigation.tracking # the url evolves with the scrolling
-    - toc.integrate # to have a toc on the left
-    - navigation.top # to have a shorcut to go back on top of the page when we scroll down
+site_name: "yongli's blog"
+site_description: "Findings, thoughts, tutorials, work. Pieces of my mind!"
+site_url: "https://wkdays.github.io/b"
+repo_url: "https://github.com/wkdays/b/"
+repo_name: "wkdays/b"
+exclude_docs: drafts/
+not_in_nav: |
+  notes/
+  tips-for-writing-*
 
 nav:
-  - 'Home': 'index.md'
-  - 'Introduction': 'mkdocs-briefly.md'
-  - 'Installation': 'installing-and-running-mkdocs.md'
+  - ...
+  - Home: index.md
+  - Posts:
+    - 2024:
+      - posts/a.md
+      - posts/b.md
+      - posts/c.md
+  - AI:
+    - 机器人:
+      - AI/robot.md
+
+
+theme:
+  name: material
+  icon:
+    logo: material/currency-sign
+  features:
+  - announce.dismiss
+  - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.tooltips
+  - navigation.footer
+  - navigation.indexes
+  - navigation.sections
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.top
+  - search.highlight
+  - search.suggest
+  - toc.follow
+  palette:
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: teal
+    accent: purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Switch to system preference
+
+
+
+markdown_extensions:
+- admonition
+- attr_list
+- footnotes
+- md_in_html
+- meta
+- pymdownx.blocks.admonition
+- pymdownx.blocks.html
+- pymdownx.blocks.tab
+- pymdownx.details
+
+
+plugins:
+- search
+- markdown-exec
+- awesome-pages
